@@ -27,9 +27,9 @@ const projectsData: ProjectData[] = [
   {
     id: 2,
     title: "Drought Prediction System",
-    description: "A predictive model that forecasts drought conditions based on historical weather data, soil moisture, and satellite imagery analysis.",
-    image: "https://images.unsplash.com/photo-1580844946486-f96526b367e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2036&q=80",
-    technologies: ["Python", "XGBoost", "Time Series", "Geospatial Analysis"],
+    description: "A predictive model using LSTM, SVC, and Random Forest algorithms to forecast drought conditions based on historical weather data and soil moisture analysis.",
+    image: "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3024&q=80",
+    technologies: ["Python", "LSTM", "SVC", "Random Forest"],
     githubLink: "#",
   },
   {
@@ -45,7 +45,7 @@ const projectsData: ProjectData[] = [
     id: 4,
     title: "Concrete Strength Prediction System",
     description: "ML model that predicts concrete strength based on mixture composition and curing conditions, optimizing construction material performance.",
-    image: "https://images.unsplash.com/photo-1582452919760-449fec2f5d5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     technologies: ["Scikit-learn", "Regression", "Feature Engineering", "Django"],
     githubLink: "#",
   }

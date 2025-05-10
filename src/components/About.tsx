@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { BadgeCheck, Brain, Zap, Database } from 'lucide-react';
+import { BadgeCheck, Brain, Zap, BarChart } from 'lucide-react';
 
 const FeatureCard = ({ 
   icon, 
@@ -37,7 +37,7 @@ const About = () => {
           <div className="mx-auto w-24 h-1 bg-portfolio-primary mt-4 mb-8 rounded-full"></div>
           <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             I specialize in building machine learning models for real-world applications, 
-            with a focus on agricultural and construction domains. My expertise lies in 
+            with a focus on innovative predictive systems. My expertise lies in 
             predictive modeling, data analysis, and deploying models for production use.
           </p>
         </div>
@@ -46,7 +46,7 @@ const About = () => {
           <FeatureCard
             icon={<Zap size={24} />}
             title="Predictive Modeling"
-            description="Building ML models that make accurate predictions for various agricultural and construction metrics."
+            description="Building ML models that make accurate predictions for various metrics across different industries."
           />
           <FeatureCard
             icon={<Brain size={24} />}
@@ -54,9 +54,9 @@ const About = () => {
             description="Implementing neural networks and computer vision models for image classification and analysis."
           />
           <FeatureCard
-            icon={<Database size={24} />}
-            title="Data Engineering"
-            description="Transforming raw data into structured formats suitable for machine learning applications."
+            icon={<BarChart size={24} />}
+            title="Data Analysis"
+            description="Converting complex datasets into actionable insights through statistical analysis and visualization."
           />
           <FeatureCard
             icon={<BadgeCheck size={24} />}

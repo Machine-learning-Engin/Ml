@@ -20,11 +20,11 @@ const Hero = () => {
                 </h2>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Building <span className="text-portfolio-primary">Predictive Systems</span> for Agriculture & Construction
+                Building <span className="text-portfolio-primary">Predictive Systems</span> for Future Uses
               </h1>
               <p className="text-lg text-gray-600 dark:text-gray-300 md:pr-10">
-                Specializing in developing machine learning models for crop yield prediction, 
-                drought forecasting, plant disease detection, and concrete strength analysis.
+                Specializing in developing machine learning models for innovative applications across industries,
+                with expertise in deep learning, computer vision, and predictive analytics.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button className="bg-gradient-to-r from-portfolio-primary to-portfolio-secondary hover:bg-gradient-to-l text-white px-8 py-6 text-lg">
@@ -57,7 +57,7 @@ const Hero = () => {
           <div className="md:w-2/5">
             <div className="relative w-full h-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1581092160607-93398dc09a54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1206&q=80"
                 alt="Machine Learning visualization"
                 className="w-full h-full object-cover object-center"
               />

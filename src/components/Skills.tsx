@@ -45,24 +45,6 @@ const Skills = () => {
       category: 'programming', 
       color: 'bg-purple-500'
     },
-    { 
-      name: 'R', 
-      proficiency: 80, 
-      category: 'programming', 
-      color: 'bg-purple-500'
-    },
-    { 
-      name: 'SQL', 
-      proficiency: 85, 
-      category: 'programming', 
-      color: 'bg-purple-500'
-    },
-    { 
-      name: 'Java', 
-      proficiency: 75, 
-      category: 'programming', 
-      color: 'bg-purple-500'
-    },
     
     // Tools
     { 
