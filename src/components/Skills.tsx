@@ -1,79 +1,102 @@
 
 import React from 'react';
+import { Card, CardContent } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 
-type SkillCategory = {
-  category: string;
-  skills: {
-    name: string;
-    percentage: number;
-  }[];
-};
-
-const skillsData: SkillCategory[] = [
-  {
-    category: "Machine Learning",
-    skills: [
-      { name: "Supervised Learning", percentage: 95 },
-      { name: "Unsupervised Learning", percentage: 90 },
-      { name: "Neural Networks", percentage: 85 },
-      { name: "Computer Vision", percentage: 80 },
-      { name: "Time Series Analysis", percentage: 85 }
-    ]
-  },
-  {
-    category: "Programming",
-    skills: [
-      { name: "Python", percentage: 95 },
-      { name: "R", percentage: 80 },
-      { name: "SQL", percentage: 85 },
-      { name: "Java", percentage: 70 },
-      { name: "JavaScript", percentage: 65 }
-    ]
-  },
-  {
-    category: "Tools & Frameworks",
-    skills: [
-      { name: "TensorFlow", percentage: 90 },
-      { name: "PyTorch", percentage: 85 },
-      { name: "Scikit-learn", percentage: 95 },
-      { name: "Pandas", percentage: 95 },
-      { name: "Docker", percentage: 75 }
-    ]
-  },
-  {
-    category: "Domain Knowledge",
-    skills: [
-      { name: "Agriculture", percentage: 95 },
-      { name: "Environmental Science", percentage: 85 },
-      { name: "Construction Materials", percentage: 80 },
-      { name: "Geospatial Analysis", percentage: 75 },
-      { name: "Statistical Analysis", percentage: 90 }
-    ]
-  }
-];
-
-const SkillItem = ({ 
-  name, 
-  percentage 
-}: { 
-  name: string; 
-  percentage: number;
-}) => {
-  return (
-    <div className="mb-4">
-      <div className="flex justify-between mb-1">
-        <span className="font-medium text-gray-700 dark:text-gray-300">{name}</span>
-        <span className="text-sm text-portfolio-primary">{percentage}%</span>
-      </div>
-      <Progress value={percentage} className="h-2 bg-gray-200 dark:bg-gray-700" indicatorColor="bg-gradient-to-r from-portfolio-primary to-portfolio-secondary" />
-    </div>
-  );
+type Skill = {
+  name: string;
+  proficiency: number;
+  category: 'machine-learning' | 'programming' | 'tools';
+  color?: string;
 };
 
 const Skills = () => {
+  const skills: Skill[] = [
+    // Machine Learning
+    { 
+      name: 'Predictive Modeling', 
+      proficiency: 95, 
+      category: 'machine-learning', 
+      color: 'bg-blue-500' 
+    },
+    { 
+      name: 'Deep Learning', 
+      proficiency: 90, 
+      category: 'machine-learning', 
+      color: 'bg-blue-500' 
+    },
+    { 
+      name: 'NLP', 
+      proficiency: 85, 
+      category: 'machine-learning', 
+      color: 'bg-blue-500' 
+    },
+    { 
+      name: 'Computer Vision', 
+      proficiency: 88, 
+      category: 'machine-learning', 
+      color: 'bg-blue-500' 
+    },
+    
+    // Programming
+    { 
+      name: 'Python', 
+      proficiency: 95, 
+      category: 'programming', 
+      color: 'bg-purple-500'
+    },
+    { 
+      name: 'R', 
+      proficiency: 80, 
+      category: 'programming', 
+      color: 'bg-purple-500'
+    },
+    { 
+      name: 'SQL', 
+      proficiency: 85, 
+      category: 'programming', 
+      color: 'bg-purple-500'
+    },
+    { 
+      name: 'Java', 
+      proficiency: 75, 
+      category: 'programming', 
+      color: 'bg-purple-500'
+    },
+    
+    // Tools
+    { 
+      name: 'TensorFlow', 
+      proficiency: 92, 
+      category: 'tools', 
+      color: 'bg-green-500'
+    },
+    { 
+      name: 'PyTorch', 
+      proficiency: 90, 
+      category: 'tools', 
+      color: 'bg-green-500'
+    },
+    { 
+      name: 'Scikit-Learn', 
+      proficiency: 95, 
+      category: 'tools', 
+      color: 'bg-green-500'
+    },
+    { 
+      name: 'Docker', 
+      proficiency: 82, 
+      category: 'tools', 
+      color: 'bg-green-500'
+    },
+  ];
+
+  const getSkillsByCategory = (category: string) => {
+    return skills.filter(skill => skill.category === category);
+  };
+
   return (
-    <section id="skills" className="py-20 bg-white dark:bg-gray-900">
+    <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="inline-block text-sm md:text-base bg-gradient-to-r from-portfolio-primary to-portfolio-secondary text-transparent bg-clip-text font-medium mb-3">
@@ -84,38 +107,62 @@ const Skills = () => {
           </h3>
           <div className="mx-auto w-24 h-1 bg-portfolio-primary mt-4 mb-8 rounded-full"></div>
           <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            A comprehensive overview of my technical skills and domain knowledge 
-            in machine learning and related technologies.
+            As a Machine Learning Engineer, I've developed expertise in various technologies and tools.
+            Here's an overview of my technical skills across different domains.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-16">
-          {skillsData.map((category, index) => (
-            <div key={index} className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-lg">
-              <h4 className="text-xl font-bold mb-6 text-portfolio-primary">{category.category}</h4>
-              {category.skills.map((skill, skillIndex) => (
-                <SkillItem key={skillIndex} name={skill.name} percentage={skill.percentage} />
-              ))}
-            </div>
-          ))}
-        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <Card className="shadow-lg border-t-4 border-blue-500">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-bold mb-4 text-blue-600 dark:text-blue-400">Machine Learning</h3>
+              <div className="space-y-4">
+                {getSkillsByCategory('machine-learning').map((skill, index) => (
+                  <div key={index}>
+                    <div className="flex justify-between mb-1">
+                      <span className="font-medium">{skill.name}</span>
+                      <span className="text-sm text-gray-500">{skill.proficiency}%</span>
+                    </div>
+                    <Progress value={skill.proficiency} className={`h-2 ${skill.color ? skill.color : ''}`} />
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
 
-        <div className="mt-20 text-center">
-          <h4 className="text-xl font-bold mb-6">Other Technologies & Tools</h4>
-          <div className="flex flex-wrap justify-center gap-4">
-            {[
-              "Keras", "NLTK", "Matplotlib", "Seaborn", "Flask", "FastAPI", 
-              "Django", "AWS", "GCP", "Azure ML", "Jupyter", "Git", "CI/CD",
-              "MongoDB", "PostgreSQL", "Tableau", "Power BI", "Linux"
-            ].map((item, i) => (
-              <span 
-                key={i}
-                className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-full text-sm"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
+          <Card className="shadow-lg border-t-4 border-purple-500">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-bold mb-4 text-purple-600 dark:text-purple-400">Programming</h3>
+              <div className="space-y-4">
+                {getSkillsByCategory('programming').map((skill, index) => (
+                  <div key={index}>
+                    <div className="flex justify-between mb-1">
+                      <span className="font-medium">{skill.name}</span>
+                      <span className="text-sm text-gray-500">{skill.proficiency}%</span>
+                    </div>
+                    <Progress value={skill.proficiency} className={`h-2 ${skill.color ? skill.color : ''}`} />
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="shadow-lg border-t-4 border-green-500">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-bold mb-4 text-green-600 dark:text-green-400">Tools & Frameworks</h3>
+              <div className="space-y-4">
+                {getSkillsByCategory('tools').map((skill, index) => (
+                  <div key={index}>
+                    <div className="flex justify-between mb-1">
+                      <span className="font-medium">{skill.name}</span>
+                      <span className="text-sm text-gray-500">{skill.proficiency}%</span>
+                    </div>
+                    <Progress value={skill.proficiency} className={`h-2 ${skill.color ? skill.color : ''}`} />
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

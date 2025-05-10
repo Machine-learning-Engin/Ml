@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { BadgeCheck, Brain, Lightning, Database } from 'lucide-react';
+import { BadgeCheck, Brain, Zap, Database } from 'lucide-react';
 
 const FeatureCard = ({ 
   icon, 
@@ -44,7 +44,7 @@ const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <FeatureCard
-            icon={<Lightning size={24} />}
+            icon={<Zap size={24} />}
             title="Predictive Modeling"
             description="Building ML models that make accurate predictions for various agricultural and construction metrics."
           />
