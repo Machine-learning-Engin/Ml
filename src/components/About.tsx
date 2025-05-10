@@ -81,14 +81,15 @@ const About = () => {
               <h3 className="text-2xl font-bold mb-4">My Journey</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 As a Machine Learning Engineer, I've dedicated my career to developing predictive 
-                models that solve real-world problems, particularly in the agricultural sector. 
-                My passion lies in using technology to improve food security and sustainable farming practices.
+                models that solve real-world problems across various industries. 
+                My passion lies in using technology to create innovative solutions through data science and 
+                artificial intelligence.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
                 With expertise in Python, TensorFlow, PyTorch, and various data science tools, 
                 I build end-to-end machine learning pipelines that transform raw data into 
-                actionable insights. My work aims to help farmers make better decisions and optimize 
-                crop yields while conserving resources.
+                actionable insights. My work aims to help organizations make better decisions 
+                and optimize processes through advanced machine learning techniques.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <span className="bg-portfolio-light dark:bg-gray-700 text-portfolio-primary px-3 py-1 rounded-full text-sm font-medium">Python</span>

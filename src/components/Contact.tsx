@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from "@/components/ui/use-toast";
-import { Mail, MapPin, Phone, Send, Linkedin, Github, Twitter } from 'lucide-react';
+import { Mail, Phone, Send, Linkedin, Github, Twitter } from 'lucide-react';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -70,8 +70,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h5 className="font-medium">Email</h5>
-                    <a href="mailto:contact@example.com" className="text-gray-600 dark:text-gray-300 hover:text-portfolio-primary">
-                      contact@example.com
+                    <a href="mailto:lanibidaniel@gmail.com" className="text-gray-600 dark:text-gray-300 hover:text-portfolio-primary">
+                      lanibidaniel@gmail.com
                     </a>
                   </div>
                 </div>
@@ -82,21 +82,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h5 className="font-medium">Phone</h5>
-                    <a href="tel:+1234567890" className="text-gray-600 dark:text-gray-300 hover:text-portfolio-primary">
-                      +123 456 7890
+                    <a href="tel:+2347011515613" className="text-gray-600 dark:text-gray-300 hover:text-portfolio-primary">
+                      +2347011515613
                     </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="bg-portfolio-light dark:bg-gray-800 p-3 rounded-lg mr-4">
-                    <MapPin className="h-5 w-5 text-portfolio-primary" />
-                  </div>
-                  <div>
-                    <h5 className="font-medium">Location</h5>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Nairobi, Kenya
-                    </p>
                   </div>
                 </div>
               </div>
