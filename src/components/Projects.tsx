@@ -12,6 +12,7 @@ type ProjectData = {
   technologies: string[];
   githubLink: string;
   demoLink?: string;
+  imageLink?: string;
 };
 
 const projectsData: ProjectData[] = [
@@ -22,7 +23,8 @@ const projectsData: ProjectData[] = [
     image: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     technologies: ["Python", "TensorFlow", "Random Forest", "Flask"],
     githubLink: "#",
-    demoLink: "#"
+    demoLink: "#",
+    imageLink: "https://github.com/Machine-learning-Engin/Machine-learning"
   },
   {
     id: 2,
@@ -55,11 +57,21 @@ const ProjectCard = ({ project }: { project: ProjectData }) => {
   return (
     <Card className="overflow-hidden border-0 shadow-lg project-card">
       <div className="relative overflow-hidden h-56">
-        <img 
-          src={project.image} 
-          alt={project.title}
-          className="w-full h-full object-cover transition-transform duration-500 card-image" 
-        />
+        {project.imageLink ? (
+          <a href={project.imageLink} target="_blank" rel="noopener noreferrer" className="block h-full">
+            <img 
+              src={project.image} 
+              alt={project.title}
+              className="w-full h-full object-cover transition-transform duration-500 card-image" 
+            />
+          </a>
+        ) : (
+          <img 
+            src={project.image} 
+            alt={project.title}
+            className="w-full h-full object-cover transition-transform duration-500 card-image" 
+          />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 transition-opacity duration-300 project-overlay flex items-end">
           <div className="p-6">
             <div className="flex space-x-2 mb-3">
