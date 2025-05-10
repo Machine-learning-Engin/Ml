@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -22,7 +21,7 @@ const projectsData: ProjectData[] = [
     description: "Machine learning model that predicts crop yields based on various environmental factors such as soil conditions, weather, and farming practices.",
     image: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     technologies: ["Python", "TensorFlow", "Random Forest", "Flask"],
-    githubLink: "#",
+    githubLink: "https://github.com/Machine-learning-Engin/Machine-learning",
     demoLink: "#",
     imageLink: "https://github.com/Machine-learning-Engin/Machine-learning"
   },
