@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from "@/components/ui/use-toast";
-import { Mail, Phone, Send, Linkedin, Github, Twitter } from 'lucide-react';
+import { Mail, Phone, Send } from 'lucide-react';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -86,21 +86,6 @@ const Contact = () => {
                       +2347011515613
                     </a>
                   </div>
-                </div>
-              </div>
-
-              <div className="mt-10">
-                <h5 className="font-medium mb-4">Connect with me</h5>
-                <div className="flex space-x-4">
-                  <a href="#" className="bg-portfolio-light dark:bg-gray-800 p-3 rounded-full hover:bg-portfolio-primary hover:text-white transition-colors">
-                    <Github className="h-5 w-5" />
-                  </a>
-                  <a href="#" className="bg-portfolio-light dark:bg-gray-800 p-3 rounded-full hover:bg-portfolio-primary hover:text-white transition-colors">
-                    <Linkedin className="h-5 w-5" />
-                  </a>
-                  <a href="#" className="bg-portfolio-light dark:bg-gray-800 p-3 rounded-full hover:bg-portfolio-primary hover:text-white transition-colors">
-                    <Twitter className="h-5 w-5" />
-                  </a>
                 </div>
               </div>
             </div>

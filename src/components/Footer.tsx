@@ -56,7 +56,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:w-2/3">
+          <div className="grid grid-cols-2 gap-8 md:w-1/2">
             <div>
               <h5 className="font-bold mb-4">Quick Links</h5>
               <ul className="space-y-2">
@@ -115,17 +115,17 @@ const Footer = () => {
               <h5 className="font-bold mb-4">Projects</h5>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-portfolio-primary transition-colors">
+                  <a href="https://github.com/Machine-learning-Engin/Machine-learning" className="text-gray-600 dark:text-gray-300 hover:text-portfolio-primary transition-colors">
                     Crop Yield Prediction
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-portfolio-primary transition-colors">
+                  <a href="https://github.com/Machine-learning-Engin/Machine-learning/blob/Maize/Drought.ipynb" className="text-gray-600 dark:text-gray-300 hover:text-portfolio-primary transition-colors">
                     Drought Prediction
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-portfolio-primary transition-colors">
+                  <a href="https://github.com/Machine-learning-Engin/Machine-learning/blob/Maize/Comparative%20analysis%20of%20CNN%20and%20SRM%20machine%20learning%20technique%20for%20maize%20disease%20detection%20(1).ipynb" className="text-gray-600 dark:text-gray-300 hover:text-portfolio-primary transition-colors">
                     Maize Disease Prediction
                   </a>
                 </li>
@@ -135,23 +135,6 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-            </div>
-
-            <div>
-              <h5 className="font-bold mb-4">Contact</h5>
-              <address className="not-italic">
-                <p className="text-gray-600 dark:text-gray-300 mb-2">Nairobi, Kenya</p>
-                <p className="text-gray-600 dark:text-gray-300 mb-2">
-                  <a href="mailto:contact@example.com" className="hover:text-portfolio-primary transition-colors">
-                    contact@example.com
-                  </a>
-                </p>
-                <p className="text-gray-600 dark:text-gray-300">
-                  <a href="tel:+1234567890" className="hover:text-portfolio-primary transition-colors">
-                    +123 456 7890
-                  </a>
-                </p>
-              </address>
             </div>
           </div>
         </div>
