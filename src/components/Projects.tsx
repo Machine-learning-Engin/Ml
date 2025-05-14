@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -31,7 +32,8 @@ const projectsData: ProjectData[] = [
     description: "A predictive model using LSTM, SVC, and Random Forest algorithms to forecast drought conditions based on historical weather data and soil moisture analysis.",
     image: "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3024&q=80",
     technologies: ["Python", "LSTM", "SVC", "Random Forest"],
-    githubLink: "#",
+    githubLink: "https://github.com/Machine-learning-Engin/Machine-learning/blob/Maize/Drought.ipynb",
+    imageLink: "https://github.com/Machine-learning-Engin/Machine-learning/blob/Maize/Drought.ipynb"
   },
   {
     id: 3,
