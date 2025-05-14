@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -48,7 +49,8 @@ const projectsData: ProjectData[] = [
     description: "ML model that predicts concrete strength based on mixture composition and curing conditions, optimizing construction material performance.",
     image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     technologies: ["Scikit-learn", "Regression", "Feature Engineering", "Django"],
-    githubLink: "#",
+    githubLink: "https://github.com/Machine-learning-Engin/Machine-learning/blob/Concrete-Ml/Concrete%20prediction.ipynb",
+    imageLink: "https://github.com/Machine-learning-Engin/Machine-learning/blob/Concrete-Ml/Concrete%20prediction.ipynb"
   }
 ];
 
