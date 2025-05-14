@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -40,8 +39,9 @@ const projectsData: ProjectData[] = [
     description: "Computer vision application that identifies diseases in maize plants from images, helping farmers take early interventions to protect crops.",
     image: "https://images.unsplash.com/photo-1543769657-fcf1236421bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2035&q=80",
     technologies: ["PyTorch", "CNN", "Transfer Learning", "Streamlit"],
-    githubLink: "#",
-    demoLink: "#"
+    githubLink: "https://github.com/Machine-learning-Engin/Machine-learning/blob/Maize/Comparative%20analysis%20of%20CNN%20and%20SRM%20machine%20learning%20technique%20for%20maize%20disease%20detection%20(1).ipynb",
+    demoLink: "#",
+    imageLink: "https://github.com/Machine-learning-Engin/Machine-learning/blob/Maize/Comparative%20analysis%20of%20CNN%20and%20SRM%20machine%20learning%20technique%20for%20maize%20disease%20detection%20(1).ipynb"
   },
   {
     id: 4,
