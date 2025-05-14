@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -11,7 +10,6 @@ type ProjectData = {
   image: string;
   technologies: string[];
   githubLink: string;
-  demoLink?: string;
   imageLink?: string;
 };
 
@@ -23,7 +21,6 @@ const projectsData: ProjectData[] = [
     image: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     technologies: ["Python", "TensorFlow", "Random Forest", "Flask"],
     githubLink: "https://github.com/Machine-learning-Engin/Machine-learning",
-    demoLink: "#",
     imageLink: "https://github.com/Machine-learning-Engin/Machine-learning"
   },
   {
@@ -42,7 +39,6 @@ const projectsData: ProjectData[] = [
     image: "https://images.unsplash.com/photo-1543769657-fcf1236421bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2035&q=80",
     technologies: ["PyTorch", "CNN", "Transfer Learning", "Streamlit"],
     githubLink: "https://github.com/Machine-learning-Engin/Machine-learning/blob/Maize/Comparative%20analysis%20of%20CNN%20and%20SRM%20machine%20learning%20technique%20for%20maize%20disease%20detection%20(1).ipynb",
-    demoLink: "#",
     imageLink: "https://github.com/Machine-learning-Engin/Machine-learning/blob/Maize/Comparative%20analysis%20of%20CNN%20and%20SRM%20machine%20learning%20technique%20for%20maize%20disease%20detection%20(1).ipynb"
   },
   {
@@ -84,14 +80,6 @@ const ProjectCard = ({ project }: { project: ProjectData }) => {
                   <span>Code</span>
                 </a>
               </Button>
-              {project.demoLink && (
-                <Button size="sm" variant="secondary" asChild>
-                  <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
-                    <ExternalLink className="mr-1 h-4 w-4" />
-                    <span>Demo</span>
-                  </a>
-                </Button>
-              )}
             </div>
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech, index) => (
